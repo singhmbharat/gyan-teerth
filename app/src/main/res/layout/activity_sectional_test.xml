@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sectional_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundWhite"
+
+    tools:context="com.example.android.gyanteerth.SectionalTest">
+    <ProgressBar
+        android:id="@+id/testprogress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:indeterminateTint="@color/colorPrimary"
+        android:progress="30"
+        />
+    <TextView
+        android:id="@+id/questionsattemptid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/testprogress"
+        android:text="question 3 out of 10"
+        android:textSize="10dp"
+        android:layout_marginTop="@dimen/small_activity_vertical_margin"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/testprogress"
+        android:text="time remaining 3:45:60"
+        android:layout_alignParentRight="true"
+        android:textSize="10dp"
+        android:layout_marginTop="@dimen/small_activity_vertical_margin"
+
+        />
+
+</RelativeLayout>

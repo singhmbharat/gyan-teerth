@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_vertical_margin"
+    >
+
+    <TextView
+        android:id="@+id/questionid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/questions"
+        android:textSize="@dimen/SmallText"
+        android:padding="@dimen/small_activity_vertical_margin"
+        />
+
+    <RadioGroup
+        android:id="@+id/chooseoptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionid"
+        android:layout_marginTop="@dimen/bigger_activity_horizontal_margin"
+        android:padding="@dimen/small_activity_vertical_margin"
+        >
+
+        <RadioButton
+            android:id="@+id/firstoption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="j dsdsd "
+            android:textSize="@dimen/SmallText"
+            />
+        <RadioButton
+            android:id="@+id/secondoption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="j dsdsd "
+            android:textSize="@dimen/SmallText"
+
+            />
+        <RadioButton
+            android:id="@+id/thirdoption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="j dsdsd "
+            android:textSize="@dimen/SmallText"
+
+            />
+        <RadioButton
+            android:id="@+id/fourthoption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="j dsdsd "
+            android:textSize="@dimen/SmallText"
+
+            />
+    </RadioGroup>
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/chooseoptions"
+        android:background="@drawable/shapes"
+        android:text="Continue"
+        android:textAlignment="center"
+        android:textColor="@color/colorBackgroundWhite"
+        android:layout_marginTop="@dimen/bigger_activity_horizontal_margin"
+        />
+</RelativeLayout>

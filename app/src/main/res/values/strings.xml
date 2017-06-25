@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Gyanteerth</string>
+    <string name="questions">who is the prime minister of india in the year 1950 and who is the president and who keep them ?</string>
+
+    <string-array name="college_names">
+        <item>Jspm</item>
+        <item>fergusson</item>
+        <item>garware</item>
+    </string-array>
+
+</resources>

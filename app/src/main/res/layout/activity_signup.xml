@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.example.android.gyanteerth.SignupActivity">
+
+    <TextView
+        android:id="@+id/Signuptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "Signup"
+        android:textSize="@dimen/LargeText"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:id="@+id/usingemailidtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Signuptext"
+        android:text="Using your emailId"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/SmallText"
+        />
+
+    <LinearLayout
+        android:id="@+id/signupbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/usingemailidtext"
+        android:layout_marginTop="@dimen/large_activity_vertical_margin"
+        >
+        <EditText
+            android:id="@+id/signupname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext"
+            android:hint="Name"
+            android:textAlignment="center"
+            android:background="@drawable/edittextshapes"
+            android:layout_marginLeft="@dimen/bigger_activity_horizontal_margin"
+            android:layout_marginRight="@dimen/bigger_activity_horizontal_margin"
+            />
+        <EditText
+            android:id="@+id/signupemail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext"
+            android:hint="E-mail"
+            android:textAlignment="center"
+            android:background="@drawable/edittextshapes"
+            android:layout_marginTop="@dimen/smaller_activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/bigger_activity_horizontal_margin"
+            android:layout_marginRight="@dimen/bigger_activity_horizontal_margin"
+            />
+        <EditText
+            android:id="@+id/signuppassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext"
+
+            android:textAlignment="center"
+            android:hint="Password"
+            android:background="@drawable/edittextshapes"
+            android:layout_marginTop="@dimen/smaller_activity_horizontal_margin"
+            android:layout_marginRight="@dimen/bigger_activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/bigger_activity_horizontal_margin"
+            />
+        <Button
+            android:id="@+id/signupbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapes"
+            android:text="SignUp"
+            android:textAlignment="center"
+            android:textColor="@color/colorBackgroundWhite"
+            android:layout_marginTop="@dimen/smaller_activity_horizontal_margin"
+            android:layout_marginRight="@dimen/bigger_activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/bigger_activity_horizontal_margin"
+            android:onClick="studentsignup"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/alreadyaccounttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Already have Account? "
+        android:layout_below="@id/signupbox"
+        android:layout_marginLeft="@dimen/large_activity_vertical_margin"
+        android:layout_marginTop="@dimen/small_activity_vertical_margin"
+        />
+    <TextView
+        android:id="@+id/backtoLogintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogIn"
+        android:layout_below="@id/signupbox"
+        android:layout_marginTop="@dimen/small_activity_vertical_margin"
+        android:layout_toRightOf="@id/alreadyaccounttext"
+        android:onClick="backToLogin"
+        />
+
+
+</RelativeLayout>
